@@ -1,4 +1,3 @@
-// src/app/page.js
 import Link from 'next/link';
 import styles from '../styles/Home.module.css';
 
@@ -6,7 +5,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <header className={styles.header}>
-        <h1 className={styles.title}>Hina Salman's Blog</h1>
+        <h1 className={styles.title}>Hina Salman&apos;s Blog</h1> {/* Fix: Use &apos; for apostrophe */}
       </header>
       <main className={styles.main}>
         <ul className={styles.postsList}>
@@ -28,7 +27,7 @@ export default function Home() {
         </ul>
       </main>
       <footer className={styles.footer}>
-        <p>&copy;2024 Hina Salman. All rights reserved   </p>
+        <p>&copy;2024 Hina Salman. All rights reserved</p>
       </footer>
     </div>
   );
